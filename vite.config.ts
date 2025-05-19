@@ -11,6 +11,7 @@ export default defineConfig(({ mode }) => ({
   },
   plugins: [
     react(),
+    base: "/CalmClone-",
     mode === 'development' &&
     componentTagger(),
   ].filter(Boolean),
